@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/6b8f0c7049.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Concert+One&family=Inconsolata&family=Lobster&family=Lobster+Two&family=Niconne&family=Roboto&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Dulce Explora</title>
+</head>
+
+<body>
+    <!-- header -->
+    <section class="grid-container">
+        <header class="header">
+            <div class="productos">
+                <div class="icons">
+                    <div class="book">
+                        <i class='bx bxs-cake'></i>
+                    </div>
+                </div>
+                <div class="titulo">
+                    <h3 class="tienda">Dulce exploración</h3>
+                </div>
+            </div>
+        </header>
+        <!-- menu burger -->
+        <div class="burger">
+            <div class="hamburger">
+                <button class="btn" onclick="myFunction()">
+                    <i class="fas fa-bars fa-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="menu-burger" class="sidebar">
+            <!--menu item-->
+            <ul class="menu">
+                <li><a class="item" href="#inicio">Inicio</a></li>
+                <li><a class="item" href="#catalogo">Catálogo </a></li>
+                <li><a class="item" href="#ofertas">Ofertas</a></li>
+                <li><a class="item" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- selection -->
+        <div class="selection">
+           <div>
+                <h4>Ordenar Por :</h4>
+           </div>
+            <div class="s-1">
+                <select class="options" name="select">
+                    <option value="value1" selected>Precio</option>
+                    <option value="value2">Alfabetico</option>
+                    <option value="value3">Destacado</option>
+                </select>
+            </div>
+        </div>
+        <!-- mangas -->
+        <main id="catalogo" class="main">
+            <div id="one" class=" item1 grid-items">
+                <div class="Dulce">
+                    <div class="postre">
+                        <img class="dessert" src="assets/img/cupcakearandano.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Cupcake de arándano</h3>
+
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="two" class=" item2 grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/galletas.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Galletas con chips de chocolate</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="three" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/hibiscopastel.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Torta de hibisco</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="four" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/nutellapie.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Pie de nutella</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+            <div id="five" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/morapastel.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Torta de mora</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="six" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/pieplatanocarmelo.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Pie de plátano y caramelo</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="seven" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/rollocanela.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Rollos de canela</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+
+            </div>
+            <div id="eight" class="grid-items">
+                <div class="manga">
+                    <div class="tomo">
+                        <img class="dessert" src="assets/img/pumpkinbar.jpg" alt="Manga">
+                    </div>
+                    <div class="texto">
+                        <h3>Barras de cheesecake de calabaza</h3>
+                    </div>
+                    <button class="boton">Ver más</button>
+                </div>
+            </div>
+        </main>
+        <!--paginacion-->
+        <div class="paginacion">
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#one">1</a></li>
+                <li><a href="#two">2</a></li>
+                <li><a href="#three">3</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="icons2">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="copyright">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </footer>
+    </section>
+   
+</body>
+
+</html>
